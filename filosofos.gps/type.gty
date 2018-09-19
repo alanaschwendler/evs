@@ -6,22 +6,22 @@
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>251 175 74 17</string>
+                <string>245 166 86 34</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>443 175 30 17</string>
+                <string>492 164 70 34</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>594 176 32 17</string>
+                <string>600 175 19 19</string>
             </attr>
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>254 75 43 17</string>
+                <string>266 74 19 19</string>
             </attr>
         </node>
         <edge from="n0" to="n0">

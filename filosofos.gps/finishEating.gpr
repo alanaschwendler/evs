@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="takeFork1">
+    <graph role="rule" edgeids="false" edgemode="directed" id="finishEating">
         <attr name="$version">
             <string>curly</string>
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>220 137 74 17</string>
+                <string>243 216 74 17</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>438 136 30 17</string>
+                <string>259 136 50 17</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>578 135 26 17</string>
+                <string>413 199 60 17</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>207 47 54 17</string>
+                <string>200 325 30 17</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>438 44 30 17</string>
+                <string>347 325 30 17</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -34,47 +34,49 @@
                 <string>type:filosopher</string>
             </attr>
         </edge>
-        <edge from="n0" to="n3">
-            <attr name="label">
-                <string>doing</string>
-            </attr>
-        </edge>
         <edge from="n0" to="n1">
             <attr name="label">
-                <string>new:take</string>
+                <string>del:doing</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n2">
+            <attr name="label">
+                <string>new:doing</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n3">
+            <attr name="label">
+                <string>not:take</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n4">
+            <attr name="label">
+                <string>not:take</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
             <attr name="label">
-                <string>type:fork</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n4">
-            <attr name="label">
-                <string>del:busy</string>
-            </attr>
-            <attr name="layout">
-                <string>497 -5 453 144 453 52 11</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n2">
-            <attr name="label">
-                <string>new:busy</string>
+                <string>string:"eating"</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
             <attr name="label">
-                <string>bool:true</string>
+                <string>string:"thinking"</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
             <attr name="label">
-                <string>string:"hungry"</string>
+                <string>type:fork</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n4">
+            <attr name="label">
+                <string>!=</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
             <attr name="label">
-                <string>bool:false</string>
+                <string>type:fork</string>
             </attr>
         </edge>
     </graph>
