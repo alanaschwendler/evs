@@ -14,11 +14,6 @@
                 <string>274 266 36 17</string>
             </attr>
         </node>
-        <node id="n2">
-            <attr name="layout">
-                <string>131 254 54 17</string>
-            </attr>
-        </node>
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>new:</string>
@@ -34,19 +29,9 @@
                 <string>new:wallet</string>
             </attr>
         </edge>
-        <edge from="n0" to="n2">
-            <attr name="label">
-                <string>new:payment</string>
-            </attr>
-        </edge>
         <edge from="n1" to="n1">
             <attr name="label">
                 <string>real:150.0</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n2">
-            <attr name="label">
-                <string>string:"money"</string>
             </attr>
         </edge>
     </graph>

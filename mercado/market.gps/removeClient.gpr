@@ -19,6 +19,16 @@
                 <string>318 202 29 17</string>
             </attr>
         </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>119 245 46 17</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>100 42 40 17</string>
+            </attr>
+        </node>
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>del:</string>
@@ -29,14 +39,24 @@
                 <string>type:client</string>
             </attr>
         </edge>
+        <edge from="n0" to="n2">
+            <attr name="label">
+                <string>not:has</string>
+            </attr>
+        </edge>
         <edge from="n0" to="n1">
             <attr name="label">
                 <string>not:walks</string>
             </attr>
         </edge>
-        <edge from="n0" to="n2">
+        <edge from="n0" to="n3">
             <attr name="label">
-                <string>not:has</string>
+                <string>not:queued</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n4">
+            <attr name="label">
+                <string>not:behind</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
@@ -57,6 +77,26 @@
         <edge from="n2" to="n2">
             <attr name="label">
                 <string>type:bag</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>type:queue</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>type:client</string>
             </attr>
         </edge>
     </graph>

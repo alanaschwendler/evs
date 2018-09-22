@@ -39,6 +39,21 @@
                 <string>358 394 26 17</string>
             </attr>
         </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>461 189 53 17</string>
+            </attr>
+        </node>
+        <node id="n8">
+            <attr name="layout">
+                <string>607 304 46 17</string>
+            </attr>
+        </node>
+        <node id="n9">
+            <attr name="layout">
+                <string>496 385 40 17</string>
+            </attr>
+        </node>
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>type:hall</string>
@@ -59,14 +74,29 @@
                 <string>type:client</string>
             </attr>
         </edge>
+        <edge from="n1" to="n0">
+            <attr name="label">
+                <string>new:walks</string>
+            </attr>
+        </edge>
         <edge from="n1" to="n6">
             <attr name="label">
                 <string>not:walks</string>
             </attr>
         </edge>
-        <edge from="n1" to="n0">
+        <edge from="n1" to="n7">
             <attr name="label">
-                <string>new:walks</string>
+                <string>not:uses</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n8">
+            <attr name="label">
+                <string>not:queued</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n9">
+            <attr name="label">
+                <string>not:behind</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
@@ -84,14 +114,14 @@
                 <string>prod:</string>
             </attr>
         </edge>
-        <edge from="n4" to="n3">
-            <attr name="label">
-                <string>arg:0</string>
-            </attr>
-        </edge>
         <edge from="n4" to="n2">
             <attr name="label">
                 <string>arg:1</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n3">
+            <attr name="label">
+                <string>arg:0</string>
             </attr>
         </edge>
         <edge from="n4" to="n5">
@@ -112,6 +142,36 @@
         <edge from="n6" to="n6">
             <attr name="label">
                 <string>type:hall</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>type:cashier</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>type:queue</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>type:client</string>
             </attr>
         </edge>
     </graph>
